@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Beading For Law",
+    "description": "Were dedicated to educating the youth K-12 on the legal system and advocacy.",
+    "location": "New York, NY",
+    "tags": ["Social Justice", "Civic Engagement"],
+    "applyUrl": "https://linktr.ee/beadingforlaw?fbclid=PAZXh0bgNhZW0CMTEAAaeX8jZGhy9mEMQAM7Rn9hJKXvf9N0UsGLzCXMZ4Syc4qZOF7xe2PCziHZ3fIw_aem_8vv3ym3O2dZhsnbPCGo3Ew"
+  },
+  {
+    "title": "Community History Internship",
+    "description": "Work with local archives to preserve oral histories and cultural heritage.",
+    "location": "New York, NY",
+    "tags": ["History", "Research"],
+    "applyUrl": "https://example.com/history-internship-apply"
+  },
+  {
+    "title": "Philosophy in Action Program",
+    "description": "Engage in seminars and projects exploring ethics in contemporary society.",
+    "location": "Boston, MA",
+    "tags": ["Philosophy", "Civic Engagement"],
+    "applyUrl": "https://example.com/philosophy-program-apply"
+  },
+  {
+    "title": "Literature & Social Justice Fellowship",
+    "description": "Research the role of literature in civic engagement and community building.",
+    "location": "Chicago, IL",
+    "tags": ["Literature", "Social Justice"],
+    "applyUrl": "https://example.com/literature-fellowship-apply"
+  },
+  {
+    "title": "Business & Law Outreach Program",
+    "description": "Learn about business ethics and law in civic projects.",
+    "location": "San Francisco, CA",
+    "tags": ["Business", "Law"],
+    "applyUrl": "https://example.com/business-law-apply"
+  },
+  {
+    "title": "Cultural Studies Abroad Program",
+    "description": "Travel abroad to learn about diverse cultures and civic practices.",
+    "location": "Paris, France",
+    "tags": ["Cultural Studies", "Travel"],
+    "applyUrl": "https://example.com/cultural-studies-apply"
+  },
+  {
+    "title": "Environmental Humanities Internship",
+    "description": "Investigate the intersection of environmental science and humanities through local projects.",
+    "location": "Seattle, WA",
+    "tags": ["Environment", "Research"],
+    "applyUrl": "https://example.com/environmental-humanities-apply"
+  },
+  {
+    "title": "Art & Civic Engagement Fellowship",
+    "description": "Use art to foster community involvement and dialogue on social issues.",
+    "location": "Los Angeles, CA",
+    "tags": ["Art", "Civic Engagement"],
+    "applyUrl": "https://example.com/art-civic-apply"
+  },
+  {
+    "title": "Public Policy Research Program",
+    "description": "Assist in research on policy initiatives that impact local communities.",
+    "location": "Washington, D.C.",
+    "tags": ["Public Policy", "Research"],
+    "applyUrl": "https://example.com/public-policy-apply"
+  }
+]

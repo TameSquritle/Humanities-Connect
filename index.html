@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Humanities Connect</title>
+  <meta name="description" content="Humanities Connect: Fostering civic engagement through humanities programs, projects, and initiatives.">
+  <style>
+    :root {
+      --brown-dark: #3e2c1c;
+      --brown-mid: #5c4033;
+      --beige-light: #f5f5dc;
+      --beige-mid: #e0d7c2;
+      --black: #111;
+    }
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: var(--beige-light);
+      color: var(--black);
+      line-height: 1.6;
+    }
+    nav {
+      background: var(--brown-dark);
+      color: var(--beige-light);
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo { font-size: 1.2rem; font-weight: bold; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.2rem; }
+    nav a { color: var(--beige-light); text-decoration: none; transition: color 0.3s ease; }
+    nav a:hover { color: var(--beige-mid); }
+
+    /* Page header (same as get-involved.html) */
+    .page-header {
+      background: var(--brown-mid);
+      color: var(--beige-light);
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .hero { background: linear-gradient(90deg, var(--brown-mid), var(--brown-dark)); color: var(--beige-light); text-align: center; padding: 4rem 2rem; }
+    .hero h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+    .btn { display: inline-block; margin-top: 1.5rem; padding: 0.7rem 1.5rem; border: none; border-radius: 8px; background: var(--beige-light); color: var(--brown-dark); font-weight: bold; cursor: pointer; text-decoration: none; }
+    .btn:hover { background: var(--beige-mid); }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; padding: 3rem 2rem; }
+    .card { background: var(--beige-mid); padding: 1.5rem; border-radius: 16px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .card h3 { color: var(--brown-dark); }
+    .cta { background: var(--brown-dark); color: var(--beige-light); text-align: center; padding: 3rem 2rem; }
+    footer { background: #1a120c; color: var(--beige-mid); text-align: center; padding: 1rem; }
+
+    /* Added for better anchor link behavior */
+    :target {
+      scroll-margin-top: 60px; /* Adjust this value based on your nav height */
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Humanities Connect</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header" id="home">
+    <h1>Humanities & Civic Engagement</h1>
+    <p>Programs • Projects • Initiatives</p>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Fostering Civic Engagement Through Humanities</h2>
+    <p>Connecting students, educators, and communities through meaningful initiatives that promote reflection, dialogue, and action.</p>
+    <a href="get-involved.html" class="btn">Get Involved</a>
+  </section>
+
+  <!-- Cards Section -->
+  <section class="cards" id="programs">
+    <div class="card">
+      <h3>Programs</h3>
+      <p>Explore academic programs in literature, history, philosophy, and cultural studies, preparing students to be active citizens.</p>
+    </div>
+    <div class="card" id="projects">
+      <h3>Student Projects</h3>
+      <p>Hands-on projects that encourage collaboration, creativity, and engagement with pressing social and cultural issues.</p>
+    </div>
+    <div class="card" id="initiatives">
+      <h3>Initiatives</h3>
+      <p>Community-based initiatives that strengthen civic responsibility and foster partnerships across diverse groups.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta" id="contact">
+    <h3>Join Our Mission</h3>
+    <p>Be part of a movement that values dialogue, inclusivity, and positive change. Whether you are a student, educator, or community member, your voice matters.</p>
+    <a href="mailto:saneyam09@gmail.com" class="btn">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+       <div class="instagram-link">
+        <a href="https://www.instagram.com/humanities.connect/?utm_source=ig_web_button_share_sheet" target="_blank" rel="noopener noreferrer">
+            Follow Us on Instagram
+        </a>
+    </div>
+    <p>&copy; <span id="year"></span> Humanities Connect. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

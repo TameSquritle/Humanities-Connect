@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Involved - Humanities Connect</title>
+  <style>
+    :root {
+      --brown-dark: #3e2c1c;
+      --brown-mid: #5c4033;
+      --beige-light: #f5f5dc;
+      --beige-mid: #e0d7c2;
+      --black: #111;
+    }
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background: var(--beige-light);
+      color: var(--black);
+      line-height: 1.6;
+    }
+    nav {
+      background: var(--brown-dark);
+      color: var(--beige-light);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo { font-size: 1.2rem; font-weight: bold; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.2rem; }
+    nav a { color: var(--beige-light); text-decoration: none; }
+    nav a:hover { color: var(--beige-mid); }
+
+    .page-header {
+      background: var(--brown-mid);
+      color: var(--beige-light);
+      padding: 3rem;
+      text-align: center;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: var(--beige-mid);
+      border-radius: 12px;
+    }
+
+    /* Search bar */
+    .search-bar {
+      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .search-bar input {
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      width: 100%;
+      max-width: 450px;
+      border: 2px solid var(--brown-dark);
+      border-radius: 25px;
+      background: var(--beige-light);
+      color: var(--black);
+      font-family: 'Georgia', serif;
+      transition: all 0.3s ease;
+    }
+    .search-bar input:focus {
+      outline: none;
+      border-color: var(--brown-mid);
+      box-shadow: 0 0 8px rgba(62,44,28,0.3);
+    }
+
+    /* Filter dropdown */
+    .filter-bar {
+      margin-bottom: 1.5rem;
+      display: flex;
+      justify-content: center;
+    }
+    #tagFilter {
+      padding: 0.6rem 1rem;
+      font-size: 1rem;
+      border: 2px solid var(--brown-dark);
+      border-radius: 25px;
+      background: var(--beige-light);
+      color: var(--black);
+      font-family: 'Georgia', serif;
+      transition: all 0.3s ease;
+    }
+    #tagFilter:focus {
+      outline: none;
+      border-color: var(--brown-mid);
+      box-shadow: 0 0 8px rgba(62,44,28,0.3);
+    }
+
+    /* Listings grid */
+    #listingContainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .listing {
+      background: var(--beige-light);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .listing:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    .listing h3 {
+      margin-top: 0;
+      color: var(--brown-dark);
+      font-size: 1.2rem;
+    }
+
+    .tags {
+      margin: 0.5rem 0;
+    }
+    .tag {
+      display: inline-block;
+      background: var(--brown-mid);
+      color: var(--beige-light);
+      padding: 0.2rem 0.6rem;
+      font-size: 0.8rem;
+      border-radius: 4px;
+      margin-right: 0.3rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .descr {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .meta {
+      font-size: 0.85rem;
+      color: var(--brown-mid);
+      font-style: italic;
+    }
+
+    .listing-apply {
+      text-align: right;
+      margin-top: 1rem;
+    }
+    .listing-apply .btn-apply {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      background: var(--brown-dark);
+      color: var(--beige-light);
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+    .listing-apply .btn-apply:hover {
+      background: var(--brown-mid);
+    }
+
+    /* Page-level Apply button */
+    .apply-container {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .apply-container .btn-apply {
+      padding: 0.8rem 1.5rem;
+      font-size: 1rem;
+      font-weight: bold;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-block;
+      background: var(--brown-dark);
+      color: var(--beige-light);
+      transition: background 0.3s ease;
+    }
+    .apply-container .btn-apply:hover {
+      background: var(--brown-mid);
+    }
+
+    footer {
+      background: #1a120c;
+      color: var(--beige-mid);
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">Humanities Connect</div>
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <h1>Get Involved</h1>
+    <p>Search and discover programs and internships that match your interests.</p>
+  </section>
+
+  <!-- Content -->
+  <section class="content">
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search internships and programs...">
+    </div>
+
+    <div class="filter-bar">
+      <select id="tagFilter">
+        <option value="">Filter by tag</option>
+      </select>
+    </div>
+
+    <div id="listingContainer"></div>
+
+    <!-- Page-level Apply Button -->
+    <div class="apply-container">
+      <a href="apply.html" class="btn-apply">Apply Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Humanities Connect. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const searchInput = document.getElementById("searchInput");
+    const tagFilter = document.getElementById("tagFilter");
+    const container = document.getElementById("listingContainer");
+    let allPrograms = [];
+
+    // Load programs from JSON
+    fetch("programs.json")
+      .then(res => res.json())
+      .then(data => {
+        allPrograms = data;
+        displayPrograms(allPrograms);
+        populateTags(allPrograms);
+      });
+
+    // Display programs function
+    function displayPrograms(programs) {
+      container.innerHTML = "";
+      programs.forEach(prog => {
+        const tagsHtml = (prog.tags || []).map(tag => `<span class="tag">${tag}</span>`).join('');
+        container.innerHTML += `
+          <div class="listing">
+            <h3>${prog.title}</h3>
+            <div class="tags">${tagsHtml}</div>
+            <p class="descr">${prog.description}</p>
+            <div class="meta">${prog.location}</div>
+            <div class="listing-apply">
+              <a href="${prog.applyUrl}" class="btn-apply" target="_blank">Apply Now</a>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    // Populate tag dropdown
+    function populateTags(programs) {
+      const allTags = new Set();
+      programs.forEach(p => (p.tags || []).forEach(tag => allTags.add(tag)));
+      tagFilter.innerHTML = '<option value="">Filter by tag</option>';
+      Array.from(allTags).sort().forEach(tag => {
+        const option = document.createElement("option");
+        option.value = tag;
+        option.textContent = tag;
+        tagFilter.appendChild(option);
+      });
+    }
+
+    // Filter programs on search or tag
+    function filterPrograms() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const selectedTag = tagFilter.value;
+
+      const filtered = allPrograms.filter(p => {
+        const matchesSearch = p.title.toLowerCase().includes(searchTerm) ||
+                              p.description.toLowerCase().includes(searchTerm) ||
+                              (p.location && p.location.toLowerCase().includes(searchTerm)) ||
+                              (p.tags && p.tags.join(' ').toLowerCase().includes(searchTerm));
+        const matchesTag = !selectedTag || (p.tags || []).includes(selectedTag);
+        return matchesSearch && matchesTag;
+      });
+
+      displayPrograms(filtered);
+    }
+
+    searchInput.addEventListener("keyup", filterPrograms);
+    tagFilter.addEventListener("change", filterPrograms);
+  </script>
+</body>
+</html>
