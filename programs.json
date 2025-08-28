@@ -7,11 +7,11 @@
     "applyUrl": "https://linktr.ee/beadingforlaw?fbclid=PAZXh0bgNhZW0CMTEAAaeX8jZGhy9mEMQAM7Rn9hJKXvf9N0UsGLzCXMZ4Syc4qZOF7xe2PCziHZ3fIw_aem_8vv3ym3O2dZhsnbPCGo3Ew"
   },
   {
-    "title": "Community History Internship",
-    "description": "Work with local archives to preserve oral histories and cultural heritage.",
-    "location": "New York, NY",
-    "tags": ["History", "Research"],
-    "applyUrl": "https://example.com/history-internship-apply"
+    "title": "Starlight of Hope",
+    "description": "Starlight of Hope is an initiative that helps students by finding scholarships and sharing valuable resources. We host monthly competitions and provide support to others through our programs. Our mission is to make opportunities more accessible and encourage students to reach their goals.",
+    "location": "Flordia, Fl",
+    "tags": ["Art", "Literature"],
+    "applyUrl": "https://linktr.ee/StarlightofHope"
   },
   {
     "title": "Philosophy in Action Program",
@@ -45,7 +45,7 @@
     "title": "Environmental Humanities Internship",
     "description": "Investigate the intersection of environmental science and humanities through local projects.",
     "location": "Seattle, WA",
-    "tags": ["Environment", "Research"],
+    "tags": ["Environment", "Politics"],
     "applyUrl": "https://example.com/environmental-humanities-apply"
   },
   {
@@ -59,7 +59,7 @@
     "title": "Public Policy Research Program",
     "description": "Assist in research on policy initiatives that impact local communities.",
     "location": "Washington, D.C.",
-    "tags": ["Public Policy", "Research"],
+    "tags": ["Public Policy", "Politics"],
     "applyUrl": "https://example.com/public-policy-apply"
   }
 ]
